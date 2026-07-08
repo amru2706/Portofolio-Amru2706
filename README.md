@@ -1,4 +1,4 @@
-# Portfolio V5
+<!-- # Portfolio V5
 
 Hello everyone\! 👋
 
@@ -58,7 +58,7 @@ VITE_SUPABASE_URL=your-supabase-project-url
 VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
 
-> Find these in your Supabase project under **Settings → API**.  
+> Find these in your Supabase project under **Settings → API**.
 > ⚠️ Never commit `.env` to version control — make sure it's in `.gitignore`.
 
 ### 3. Supabase Client (`src/supabase.js`)
@@ -313,9 +313,9 @@ Upload the contents of the `dist/` folder to your hosting provider.
 
 ## Credits & Contact
 
-**Muhammad Amrullah**  
+**Muhammad Amrullah**
 Website: [eki.my.id](https://loremipsum.com) · GitHub: [loremipsum](https://github.com/loremipsum)
 
 Thanks to [LottieFiles](https://lottiefiles.com/free-animation/coding-NWhbxMOVgP) and Claude.
 
-⭐ If this project helped you, consider giving it a star on GitHub!
+⭐ If this project helped you, consider giving it a star on GitHub! -->
