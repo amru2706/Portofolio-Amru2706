@@ -44,7 +44,7 @@ const socialLinks = [
     displayName: "Github",
     subText: "@AmRu",
     icon: Github,
-    url: "https://github.com/amru2706",
+    url: "https://github.com/amru2706_",
     color: "#ffffff",
     gradient: "from-[#333] to-[#24292e]",
   },

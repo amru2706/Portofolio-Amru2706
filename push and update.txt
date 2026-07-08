@@ -1,0 +1,17 @@
+VITE_SUPABASE_URL=https://mysqkihgmmxyxrbfrxry.supabase.co
+VITE_SUPABASE_ANON_KEY=sb_publishable_R5TRvl-dn1MYOPDgNj5euw_4qaJ0u-Q
+
+
+rm -rf .git
+git init
+git add .
+git commit -m "First commit portofolio"
+git branch -M main
+git remote add origin https://github.com/amru2706/Portofolio-Amru2706.git
+git push -u origin main
+
+
+update
+
+git status
+git add (nama file di status)
