@@ -31,20 +31,30 @@ const StatusBadge = memo(() => (
 
 const MainTitle = memo(() => (
   <div className="space-y-2" data-aos="fade-up" data-aos-delay="600">
-    <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-bold tracking-tight">
+    {/* Mengubah font-bold menjadi font-extrabold dan memperbesar ukuran teks (xl:text-7xl) */}
+    <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-tight sm:leading-tight">
+      
+      {/* Baris Pertama: Code with Passion */}
       <span className="relative inline-block">
-        <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
-        <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
+        <span className="absolute -inset-2 bg-blue-500/20 blur-2xl rounded-full"></span>
+        <span className="relative text-white">
           Code with Passion, 
         </span>
       </span>
+      
       <br />
-      <span className="relative inline-block mt-2">
-        <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
-        <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-         Test with Precision.
+      
+      {/* Baris Kedua: Test with Precision */}
+      <span className="relative inline-block mt-2 sm:mt-4">
+        {/* Efek Glow: Dibuat lebih terang (opacity-40) dan ditambahkan efek berdenyut perlahan (animate-pulse) */}
+        <span className="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-fuchsia-500 blur-2xl opacity-40 rounded-full animate-pulse"></span>
+        
+        {/* Gradien Teks: Menggunakan warna yang lebih cerah agar kontras dengan background gelap */}
+        <span className="relative bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent pb-2 pr-2">
+          Test with Precision.
         </span>
       </span>
+
     </h1>
   </div>
 ));
