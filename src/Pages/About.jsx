@@ -16,7 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Timeline Item Component
-const TimelineItem = memo(({ year, title, institution, description, location, isLeft, icon: Icon, color }) => (
+const TimelineItem = memo(({ year, title, institution, description, score, location, isLeft, icon: Icon, color }) => (
   <div className={`flex flex-col md:flex-row ${isLeft ? 'md:flex-row-reverse' : ''} gap-4 mb-12`} data-aos="fade-up">
     <div className="flex-1" />
     <div className="flex flex-col items-center">
@@ -33,6 +33,14 @@ const TimelineItem = memo(({ year, title, institution, description, location, is
         </div>
         <h3 className="text-2xl font-bold text-white mb-1">{title}</h3>
         <p className="text-lg text-[#818cf8] mb-2">{institution}</p>
+        {/* TAMBAHAN KODE UNTUK MEMUNCULKAN NILAI/IPK */}
+        {score && (
+          <div className="mb-4">
+            <span className="px-3 py-1 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-full">
+              {score}
+            </span>
+          </div>
+        )}
         {location && (
           <div className="flex items-center gap-1 text-gray-400 text-sm mb-3">
             <MapPin className="w-4 h-4" />
@@ -176,20 +184,22 @@ const StatCard = memo(
 // Data for Education and Career
 const EDUCATION_DATA = [
   {
-    year: "2022 - Sekarang",
-    title: "S1 Teknik Informatika",
-    institution: "Universitas Islam Bandung",
-    location: "Bandung, Indonesia",
+    year: "2021 - 2026",
+    title: "S1 Teknologi Informasi",
+    institution: "Universitas Darma persada",
+    location: "Jakarta, Indonesia",
+    score : "IPK : 3.62",
     description: "Menekuni bidang Teknik Informatika dengan fokus pada pengembangan web, khususnya Front-End Developer. Aktif mengikuti berbagai workshop dan course untuk meningkatkan keterampilan.",
     icon: GraduationCap,
     color: "from-[#6366f1] to-[#818cf8]"
   },
   {
-    year: "2019 - 2022",
-    title: "SMA Negeri 1 Cilegon",
-    institution: "Jurusan IPA",
-    location: "Cilegon, Indonesia",
-    description: "Menjalani pendidikan SMA di jurusan IPA dengan fokus pada mata pelajaran matematika dan ilmu pengetahuan alam.",
+    year: "2018 - 2021",
+    title: "Madrasah Aliyah Negeri 21 Jakarta",
+    institution: "Jurusan IPS",
+    location: "Jakarta, Indonesia",
+    score: "Nilai Rata-rata: 87.5",
+    description: "Semasa sekolah saya fokus mengikuti kegiatan berkaitan dengan teknologi diantaranya saya mengikuti sebuah ekstrakurikuler Computer Club dan Aktif di kegiatan tersebut.",
     icon: GraduationCap,
     color: "from-[#a855f7] to-[#818cf8]"
   }
@@ -197,20 +207,20 @@ const EDUCATION_DATA = [
 
 const CAREER_DATA = [
   {
-    year: "2024 - Sekarang",
-    title: "Freelance Frontend Developer",
-    institution: "Self-Employed",
-    location: "Remote",
-    description: "Bekerja sebagai freelance developer, mengembangkan berbagai project website modern dengan React dan Tailwind CSS. Fokus pada pengalaman pengguna yang optimal.",
+    year: "March 2026 - Present",
+    title: "Quality Assurance Tester",
+    institution: "PT. Infovesta Utama",
+    location: "Work From Office",
+    description: "Melakukan pengujian manual dan otomatis pada berbagai aplikasi web untuk memastikan kualitas produk sebelum dirilis ke pengguna.",
     icon: BriefcaseBusiness,
     color: "from-[#6366f1] to-[#a855f7]"
   },
   {
-    year: "2023 - 2024",
-    title: "Quality Assurance Tester",
-    institution: "Freelance",
-    location: "Remote",
-    description: "Melakukan pengujian manual dan otomatis pada berbagai aplikasi web untuk memastikan kualitas produk sebelum dirilis ke pengguna.",
+    year: "Sep 2024 - Nov 2024",
+    title: "Web Developer",
+    institution: "Pusat Data dan Informasi Kementerian Pertahanan RI",
+    location: "Work From Office",
+    description: "example",
     icon: BriefcaseBusiness,
     color: "from-[#a855f7] to-[#6366f1]"
   }
