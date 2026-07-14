@@ -30,34 +30,22 @@ const StatusBadge = memo(() => (
 ));
 
 const MainTitle = memo(() => (
-  // Menambahkan padding-top (pt-4) agar ada ruang aman di bagian atas komponen
   <div className="space-y-4 pt-4" data-aos="fade-up" data-aos-delay="600">
-    
-    {/* Mengubah leading-tight menjadi leading-snug (atau leading-normal) agar jarak vertikal lebih aman */}
-    <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl font-extrabold tracking-tight leading-snug sm:leading-snug">
-      
-      {/* Baris Pertama: Code with Passion */}
-      {/* Menambahkan py-2 agar bagian atas huruf besar tidak terpotong */}
-      <span className="relative inline-block py-2"> 
+    <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-snug sm:leading-snug">
+      <span className="relative inline-block py-2">
         <span className="absolute -inset-2 bg-blue-500/20 blur-2xl rounded-full"></span>
         <span className="relative text-white">
-          Code with Passion, 
+          Code with Passion,
         </span>
       </span>
-      
       <br />
-      
-      {/* Baris Kedua: Test with Precision */}
       <span className="relative inline-block mt-2 sm:mt-4 py-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-fuchsia-500 blur-2xl opacity-40 rounded-full animate-pulse"></span>
-        
-        {/* Menambahkan py-2 (padding atas & bawah) pr-2 (padding kanan) untuk melindungi bg-clip-text */}
         <span className="relative bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent py-2 pr-2">
           Test with Precision.
         </span>
       </span>
     </h1>
-    
   </div>
 ));
 
@@ -78,7 +66,9 @@ const CTAButton = memo(({ href, text, icon: Icon }) => (
             {text}
           </span>
           <Icon
-            className={`w-4 h-4 text-gray-200 ${text === "Contact" ? "group-hover:translate-x-1" : "group-hover:rotate-45"} transform transition-all duration-300 z-10`}
+            className={`w-4 h-4 text-gray-200 ${
+              text === "Contact" ? "group-hover:translate-x-1" : "group-hover:rotate-45"
+            } transform transition-all duration-300 z-10`}
           />
         </span>
       </div>
@@ -100,7 +90,7 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Web Develooper", "Quality Assurance Tester", "Frontend Developer"];
+const WORDS = ["Web Developer", "Quality Assurance Tester", "Frontend Developer"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
   {
@@ -176,7 +166,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Muhammad Amrullah — Contoh</title>
+        <title>Muhammad Amrullah — Frontend Web Developer</title>
         <meta
           name="description"
           content="Website resmi Muhammad Amrullah, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan."
@@ -218,13 +208,14 @@ const Home = () => {
         >
           <div className="container mx-auto min-h-screen">
             <div className="flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg:gap-20">
+              
               {/* Left Column */}
               <div
                 className="w-full lg:w-1/2 space-y-6 sm:space-y-8 text-left lg:text-left order-1 lg:order-1 lg:mt-0"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
-                <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-4 sm:space-y-6 pt-10 sm:pt-0">
                   <StatusBadge />
                   <MainTitle />
 
@@ -260,36 +251,35 @@ const Home = () => {
                     ))}
                   </div>
 
-                  {/* CTA Buttons */}
-                  <div
-                    className="flex flex-row gap-3 w-full justify-start"
+                  {/* CTA Buttons & Social Links Grouped */}
+                  <div 
+                    className="flex flex-wrap items-center gap-4 pt-2"
                     data-aos="fade-up"
                     data-aos-delay="1400"
                   >
-                    <CTAButton
-                      href="#Portofolio"
-                      text="Projects"
-                      icon={ExternalLink}
-                    />
-                    <CTAButton href="#Contact" text="Contact" icon={Mail} />
+                    <div className="flex flex-row gap-3">
+                      <CTAButton
+                        href="#Portofolio"
+                        text="Projects"
+                        icon={ExternalLink}
+                      />
+                      <CTAButton href="#Contact" text="Contact" icon={Mail} />
+                    </div>
+                    
+                    {/* Social Links (Hidden on very small screens, shown alongside buttons on larger) */}
+                    <div className="hidden sm:flex gap-3">
+                      {SOCIAL_LINKS.map((social, index) => (
+                        <SocialLink key={index} {...social} />
+                      ))}
+                    </div>
                   </div>
-
-                  {/* Social Links */}
-                  <div
-                    className="hidden sm:flex gap-4 justify-start"
-                    data-aos="fade-up"
-                    data-aos-delay="1600"
-                  >
-                    {SOCIAL_LINKS.map((social, index) => (
-                      <SocialLink key={index} {...social} />
-                    ))}
-                  </div>
+                  
                 </div>
               </div>
 
-              {/* Right Column - WebM Video */}
+              {/* Right Column - WebM Video / Animation */}
               <div
-                className="w-full py-0 md:py-[10%] sm:py-0 lg:w-1/2 h-[260px] sm:h-[400px] lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2  mt-5 sm:mt-0"
+                className="w-full py-0 md:py-[10%] sm:py-0 lg:w-1/2 h-[260px] sm:h-[400px] lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-8 sm:mt-0"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
                 data-aos="fade-left"
@@ -333,6 +323,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
