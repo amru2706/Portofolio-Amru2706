@@ -34,7 +34,7 @@ const MainTitle = memo(() => (
   <div className="space-y-4 pt-4" data-aos="fade-up" data-aos-delay="600">
     
     {/* Mengubah leading-tight menjadi leading-snug (atau leading-normal) agar jarak vertikal lebih aman */}
-    <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-snug sm:leading-snug">
+    <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl font-extrabold tracking-tight leading-snug sm:leading-snug">
       
       {/* Baris Pertama: Code with Passion */}
       {/* Menambahkan py-2 agar bagian atas huruf besar tidak terpotong */}
