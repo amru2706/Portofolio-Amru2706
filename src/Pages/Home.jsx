@@ -35,7 +35,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Membangun Efisiensi Lewat
+          Membangun Efisiensi Lewatt
         </span>
       </span>
       <br />
@@ -88,7 +88,7 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Web Developer", "Quality Assurance Tester", "Frontend Developer"];
+const WORDS = ["Web Develooper", "Quality Assurance Tester", "Frontend Developer"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
   {
@@ -186,7 +186,7 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Muhammad Amrullah",
-            "jobTitle": "Membangun Efisiensi Lewat Infrastruktur IT.",
+            "jobTitle": "Frontend Developer",
             "url": "https://loremipsum.com",
             "sameAs": [
               "https://github.com/amru2706",
