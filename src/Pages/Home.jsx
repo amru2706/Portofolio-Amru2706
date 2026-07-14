@@ -35,14 +35,14 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Frontend
+          Membangun Efisiensi Lewat
         </span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-          Developer
+         Infrastruktur IT.
         </span>
       </span>
     </h1>
@@ -164,7 +164,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Muhammad Amrullah — Frontend Web Developer</title>
+        <title>Muhammad Amrullah — Contoh</title>
         <meta
           name="description"
           content="Website resmi Muhammad Amrullah, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan."
@@ -186,7 +186,7 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Muhammad Amrullah",
-            "jobTitle": "Frontend Developer",
+            "jobTitle": "Membangun Efisiensi Lewat Infrastruktur IT.",
             "url": "https://loremipsum.com",
             "sameAs": [
               "https://github.com/amru2706",
