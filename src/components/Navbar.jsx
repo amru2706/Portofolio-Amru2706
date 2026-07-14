@@ -6,9 +6,11 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
 
-  const navItems = [
+const navItems = [
     { href: "#Home", label: "Home" },
     { href: "#About", label: "About" },
+    { href: "#Pendidikan", label: "Pendidikan" },
+    { href: "#Pengalaman", label: "Pengalaman" },
     { href: "#Portofolio", label: "Portofolio" },
     { href: "#Contact", label: "Contact" },
   ];

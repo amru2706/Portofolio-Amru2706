@@ -6,67 +6,9 @@ import {
   Globe,
   ArrowUpRight,
   Sparkles,
-  UserCheck,
-  GraduationCap,
-  BriefcaseBusiness,
-  Calendar,
-  MapPin,
 } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// Timeline Item Component
-const TimelineItem = memo(({ year, title, institution, description, score, location, isLeft, icon: Icon, color }) => (
-  <div className={`flex flex-col md:flex-row ${isLeft ? 'md:flex-row-reverse' : ''} gap-4 mb-12`} data-aos="fade-up">
-    <div className="flex-1" />
-    <div className="flex flex-col items-center">
-      <div className={`w-12 h-12 rounded-full flex items-center justify-center z-10 bg-gradient-to-br ${color} shadow-lg`}>
-        <Icon className="w-6 h-6 text-white" />
-      </div>
-      <div className="w-1 h-full bg-gradient-to-b from-[#6366f1] via-[#a855f7] to-transparent mt-2" />
-    </div>
-    <div className="flex-1">
-      <div className="bg-gray-900/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
-        <div className="flex items-center gap-2 mb-2 text-gray-300 text-sm">
-          <Calendar className="w-4 h-4" />
-          <span>{year}</span>
-        </div>
-        <h3 className="text-2xl font-bold text-white mb-1">{title}</h3>
-        <p className="text-lg text-[#818cf8] mb-2">{institution}</p>
-        {/* TAMBAHAN KODE UNTUK MEMUNCULKAN NILAI/IPK */}
-        {score && (
-          <div className="mb-4">
-            <span className="px-3 py-1 text-sm font-medium text-white bg-white/10 border border-white/20 rounded-full">
-              {score}
-            </span>
-          </div>
-        )}
-        {location && (
-          <div className="flex items-center gap-1 text-gray-400 text-sm mb-3">
-            <MapPin className="w-4 h-4" />
-            <span>{location}</span>
-          </div>
-        )}
-        <p className="text-gray-400 leading-relaxed">{description}</p>
-      </div>
-    </div>
-  </div>
-));
-
-// Section Header Component
-const SectionHeader = memo(({ title, subtitle, icon: Icon }) => (
-  <div className="text-center mb-12 px-[5%]" data-aos="zoom-in">
-    <div className="inline-flex items-center gap-2 mb-4">
-      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#6366f1] to-[#a855f7]" />
-      <span className="text-sm text-gray-400 uppercase tracking-widest">{subtitle}</span>
-      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#a855f7] to-[#6366f1]" />
-    </div>
-    <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7] flex items-center justify-center gap-3">
-      <Icon className="w-10 h-10 text-[#818cf8]" />
-      {title}
-    </h2>
-  </div>
-));
 
 // Memoized Components
 const Header = memo(() => (
@@ -95,7 +37,6 @@ const Header = memo(() => (
 const ProfileImage = memo(() => (
   <div className="flex justify-end items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
     <div className="relative group" data-aos="fade-up" data-aos-duration="1000">
-      {/* Optimized gradient backgrounds with reduced complexity for mobile */}
       <div className="absolute -inset-6 opacity-[25%] z-0 hidden sm:block">
         <div className="absolute inset-0 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 rounded-full blur-2xl animate-spin-slower" />
         <div className="absolute inset-0 bg-gradient-to-l from-fuchsia-500 via-rose-500 to-pink-600 rounded-full blur-2xl animate-pulse-slow opacity-50" />
@@ -106,7 +47,6 @@ const ProfileImage = memo(() => (
         <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(120,119,198,0.3)] transform transition-all duration-700 group-hover:scale-105">
           <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
 
-          {/* Optimized overlay effects - disabled on mobile */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 z-10 transition-opacity duration-700 group-hover:opacity-0 hidden sm:block" />
           <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
 
@@ -117,7 +57,6 @@ const ProfileImage = memo(() => (
             loading="lazy"
           />
 
-          {/* Advanced hover effects - desktop only */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 z-20 hidden sm:block">
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-white/10 to-transparent transform translate-y-full group-hover:-translate-y-full transition-transform duration-1000 delay-100" />
@@ -181,53 +120,7 @@ const StatCard = memo(
   ),
 );
 
-// Data for Education and Career
-const EDUCATION_DATA = [
-  {
-    year: "2021 - 2026",
-    title: "S1 Teknologi Informasi",
-    institution: "Universitas Darma persada",
-    location: "Jakarta, Indonesia",
-    score : "IPK : 3.62",
-    description: "Menekuni bidang Teknik Informatika dengan fokus pada pengembangan web, khususnya Front-End Developer. Aktif mengikuti berbagai workshop dan course untuk meningkatkan keterampilan.",
-    icon: GraduationCap,
-    color: "from-[#6366f1] to-[#818cf8]"
-  },
-  {
-    year: "2018 - 2021",
-    title: "Madrasah Aliyah Negeri 21 Jakarta",
-    institution: "Jurusan IPS",
-    location: "Jakarta, Indonesia",
-    score: "Nilai Rata-rata: 87.5",
-    description: "Semasa sekolah saya fokus mengikuti kegiatan berkaitan dengan teknologi diantaranya saya mengikuti sebuah ekstrakurikuler Computer Club dan Aktif di kegiatan tersebut.",
-    icon: GraduationCap,
-    color: "from-[#a855f7] to-[#818cf8]"
-  }
-];
-
-const CAREER_DATA = [
-  {
-    year: "March 2026 - Present",
-    title: "Quality Assurance Tester",
-    institution: "PT. Infovesta Utama",
-    location: "Work From Office",
-    description: "Melakukan pengujian manual dan otomatis pada berbagai aplikasi web untuk memastikan kualitas produk sebelum dirilis ke pengguna.",
-    icon: BriefcaseBusiness,
-    color: "from-[#6366f1] to-[#a855f7]"
-  },
-  {
-    year: "Sep 2024 - Nov 2024",
-    title: "Web Developer",
-    institution: "Pusat Data dan Informasi Kementerian Pertahanan RI",
-    location: "Work From Office",
-    description: "example",
-    icon: BriefcaseBusiness,
-    color: "from-[#a855f7] to-[#6366f1]"
-  }
-];
-
 const AboutPage = () => {
-  // Memoized calculations
   const [stats, setStats] = useState({
     totalProjects: 0,
     totalCertificates: 0,
@@ -273,7 +166,6 @@ const AboutPage = () => {
 
   const { totalProjects, totalCertificates, YearExperience } = stats;
 
-  // Optimized AOS initialization
   useEffect(() => {
     const initAOS = () => {
       AOS.init({
@@ -283,7 +175,6 @@ const AboutPage = () => {
 
     initAOS();
 
-    // Debounced resize handler
     let resizeTimer;
     const handleResize = () => {
       clearTimeout(resizeTimer);
@@ -297,7 +188,6 @@ const AboutPage = () => {
     };
   }, []);
 
-  // Memoized stats data
   const statsData = useMemo(
     () => [
       {
@@ -369,17 +259,14 @@ const AboutPage = () => {
               dalam setiap proyek yang saya kerjakan.
             </p>
 
-            {/* Quote Section */}
             <div
               className="relative bg-gradient-to-br from-[#6366f1]/5 via-transparent to-[#a855f7]/5 border border-gradient-to-r border-[#6366f1]/30 rounded-2xl p-4 my-6 backdrop-blur-md shadow-2xl overflow-hidden"
               data-aos="fade-up"
               data-aos-duration="1700"
             >
-              {/* Floating orbs background */}
               <div className="absolute top-2 right-4 w-16 h-16 bg-gradient-to-r from-[#6366f1]/20 to-[#a855f7]/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -left-2 w-12 h-12 bg-gradient-to-r from-[#a855f7]/20 to-[#6366f1]/20 rounded-full blur-lg"></div>
 
-              {/* Quote icon */}
               <div className="absolute top-3 left-4 text-[#6366f1] opacity-30">
                 <svg
                   width="16"
@@ -398,7 +285,7 @@ const AboutPage = () => {
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo"
+                href="https://drive.google.com/file/d/1xiFxUBSjnzZGmOEY9omiTtWGHObRb578/view?usp=sharing"
                 className="w-full lg:w-auto"
               >
                 <button
@@ -431,42 +318,6 @@ const AboutPage = () => {
             ))}
           </div>
         </a>
-      </div>
-
-      {/* Education Section */}
-      <div className="mt-24">
-        <SectionHeader 
-          title="Riwayat Pendidikan" 
-          subtitle="My Academic Journey" 
-          icon={GraduationCap} 
-        />
-        <div className="max-w-4xl mx-auto">
-          {EDUCATION_DATA.map((item, index) => (
-            <TimelineItem 
-              key={index} 
-              {...item} 
-              isLeft={index % 2 === 0} 
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Career Section */}
-      <div className="mt-24">
-        <SectionHeader 
-          title="Perjalanan Karir" 
-          subtitle="My Professional Experience" 
-          icon={BriefcaseBusiness} 
-        />
-        <div className="max-w-4xl mx-auto">
-          {CAREER_DATA.map((item, index) => (
-            <TimelineItem 
-              key={index} 
-              {...item} 
-              isLeft={index % 2 === 0} 
-            />
-          ))}
-        </div>
       </div>
 
       <style jsx>{`
