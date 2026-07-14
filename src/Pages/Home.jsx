@@ -32,7 +32,7 @@ const StatusBadge = memo(() => (
 const MainTitle = memo(() => (
   <div className="space-y-2 pt-4" data-aos="fade-up" data-aos-delay="600">
     {/* 
-      Perubahan Utama: 
+      Perubahan Utaa: 
       - font-black: Ketebalan maksimal (lebih tebal dari extrabold).
       - tracking-tighter: Jarak antar huruf sangat dirapatkan.
       - leading-[1.1]: Jarak antar baris sangat rapat (blocky look).
