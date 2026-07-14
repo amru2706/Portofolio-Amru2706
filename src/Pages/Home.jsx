@@ -35,14 +35,14 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Membangun Efisiensi Lewatt
+          Code with Passion, 
         </span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-         Infrastruktur IT.
+         Test with Precision.
         </span>
       </span>
     </h1>
@@ -234,8 +234,7 @@ const Home = () => {
                     data-aos="fade-up"
                     data-aos-delay="1000"
                   >
-                    Menciptakan Website Yang Inovatif, Fungsional, dan
-                    User-Friendly untuk Solusi Digital.
+                    Menghadirkan solusi web end-to-end melalui pengembangan frontend yang modern dan proses pengujian kualitas perangkat lunak yang mendetail.
                   </p>
 
                   {/* Tech Stack */}
