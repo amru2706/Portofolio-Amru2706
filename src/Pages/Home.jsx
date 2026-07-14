@@ -30,21 +30,25 @@ const StatusBadge = memo(() => (
 ));
 
 const MainTitle = memo(() => (
-  <div className="space-y-4 pt-4" data-aos="fade-up" data-aos-delay="600">
-    <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-snug sm:leading-snug">
-      <span className="relative inline-block py-2">
-        <span className="absolute -inset-2 bg-blue-500/20 blur-2xl rounded-full"></span>
-        <span className="relative text-white">
-          Code with Passion,
-        </span>
+  <div className="space-y-2 pt-4" data-aos="fade-up" data-aos-delay="600">
+    {/* 
+      Perubahan Utama: 
+      - font-black: Ketebalan maksimal (lebih tebal dari extrabold).
+      - tracking-tighter: Jarak antar huruf sangat dirapatkan.
+      - leading-[1.1]: Jarak antar baris sangat rapat (blocky look).
+    */}
+    <h1 className="text-5xl sm:text-6xl md:text-7xl xl:text-[75px] font-black tracking-tighter leading-[1.1] text-white">
+      
+      {/* Baris Pertama */}
+      <span className="block">
+        Code with <span className="text-[#818cf8]">Passion,</span>
       </span>
-      <br />
-      <span className="relative inline-block mt-2 sm:mt-4 py-2">
-        <span className="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-fuchsia-500 blur-2xl opacity-40 rounded-full animate-pulse"></span>
-        <span className="relative bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent py-2 pr-2">
-          Test with Precision.
-        </span>
+      
+      {/* Baris Kedua */}
+      <span className="block mt-1 sm:mt-2">
+        Test with <span className="text-[#818cf8]">Precision.</span>
       </span>
+
     </h1>
   </div>
 ));
