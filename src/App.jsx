@@ -5,8 +5,8 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import PendidikanPage from "./Pages/pendidikan";
-import PengalamanPage from "./Pages/Pengalaman";
+import Pendidikan from "./Pages/pendidikan";
+import Pengalaman from "./Pages/Pengalaman";
 import AnimatedBackground from "./components/Background";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer";
@@ -38,8 +38,8 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
       
           <Home />
           <About />
-          <PendidikanPage />
-          <PengalamanPage />
+          <Pendidikan />
+          <Pengalaman />
           <Suspense fallback={<div className="h-20" />}>
             <Portofolio />
             <ContactPage />

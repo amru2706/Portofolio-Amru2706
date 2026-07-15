@@ -12,7 +12,7 @@ const navItems = [
     { href: "#Pendidikan", label: "Pendidikan" },
     { href: "#Pengalaman", label: "Pengalaman" },
     { href: "#Portofolio", label: "Portofolio" },
-    { href: "#Contact", label: "Contact" },
+    { href: "#Contact", label: "Contacts" },
   ];
 
   useEffect(() => {
