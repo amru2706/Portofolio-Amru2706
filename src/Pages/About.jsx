@@ -253,10 +253,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Saya adalah mahasiswa Teknik Informatika yang berfokus pada
-              pengembangan Front-End. Saya berfokus pada penciptaan pengalaman
-              digital yang menarik dan selalu berupaya memberikan solusi terbaik
-              dalam setiap proyek yang saya kerjakan.
+              Saya merupakan seorang Fresh Graduate lulusan S1 Teknologi Informasi yang memiliki pengalaman professional di bidang Quality Assurance dan Web Development. Berpengalaman dalam pengujian aplikasi, pengembangan sistem berbasis web, serta memastikan kualitas perangkat lunak melalui pendekatan yang sistematis, detail, dan berorientasi pada pengalaman pengguna.
             </p>
 
             <div

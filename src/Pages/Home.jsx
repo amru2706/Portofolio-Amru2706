@@ -95,7 +95,7 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Web Developer", "Quality Assurance Tester", "Frontend Developer"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const TECH_STACK = ["Quality Assurance", "Manual Testing", "Automation Testing", "Playwright","React", "PHP","Javascript", "Microsoft Office"];
 const SOCIAL_LINKS = [
   {
     icon: Github,
@@ -241,7 +241,7 @@ const Home = () => {
                     data-aos="fade-up"
                     data-aos-delay="1000"
                   >
-                    Menghadirkan solusi web end-to-end melalui pengembangan frontend yang modern dan proses pengujian kualitas perangkat lunak yang mendetail.
+                    Mengembangkan aplikasi web yang modern serta memastikan setiap produk memenuhi standar kualitas melalui proses pengujian yang sistematis, kolaboratif, dan berorientasi pada pengalaman pengguna
                   </p>
 
                   {/* Tech Stack */}
