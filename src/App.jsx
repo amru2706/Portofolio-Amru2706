@@ -5,7 +5,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Pendidikan from "./Pages/pendidikan";
+import pendidikan from "./Pages/pendidikan";
 import Pengalaman from "./Pages/Pengalaman";
 import AnimatedBackground from "./components/Background";
 import { AnimatePresence } from "framer-motion";
