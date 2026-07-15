@@ -345,7 +345,7 @@ const EDUCATION_DATA = [
     color: "from-violet-500 to-indigo-500",
   },
 ];
-const pendidikan = () => {
+const Pendidikan = () => {
   useEffect(() => {
     AOS.init({
       duration: 900,
@@ -356,7 +356,7 @@ const pendidikan = () => {
 
   return (
     <section
-      id="pendidikan"
+      id="Pendidikan"
       className="
         relative
         overflow-hidden
@@ -494,4 +494,4 @@ const pendidikan = () => {
   );
 };
 
-export default memo(pendidikan);
+export default memo(Pendidikan);
