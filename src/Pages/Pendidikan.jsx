@@ -456,7 +456,7 @@ const Pendidikan = () => {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-slate-900/70 backdrop-blur-md p-6 text-center transition hover:border-indigo-500/40 hover:-translate-y-2 duration-300">
-          <h3 className="text-4xl font-bold text-indigo-400">12+</h3>
+          <h3 className="text-4xl font-bold text-indigo-400">15+</h3>
           <p className="text-gray-400 mt-2">Academic Projects</p>
         </div>
       </div>
