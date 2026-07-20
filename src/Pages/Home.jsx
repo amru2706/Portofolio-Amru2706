@@ -38,17 +38,15 @@ const MainTitle = memo(() => (
       - leading-[1.1]: Jarak antar baris sangat rapat (blocky look).
     */}
     <h1 className="text-5xl sm:text-6xl md:text-7xl xl:text-[75px] font-black tracking-tighter leading-[1.1] text-white">
-      
       {/* Baris Pertama */}
       <span className="block">
         Code with <span className="text-[#818cf8]">Passion,</span>
       </span>
-      
+
       {/* Baris Kedua */}
       <span className="block mt-1 sm:mt-2">
         Test with <span className="text-[#818cf8]">Precision.</span>
       </span>
-
     </h1>
   </div>
 ));
@@ -71,7 +69,9 @@ const CTAButton = memo(({ href, text, icon: Icon }) => (
           </span>
           <Icon
             className={`w-4 h-4 text-gray-200 ${
-              text === "Contact" ? "group-hover:translate-x-1" : "group-hover:rotate-45"
+              text === "Contact"
+                ? "group-hover:translate-x-1"
+                : "group-hover:rotate-45"
             } transform transition-all duration-300 z-10`}
           />
         </span>
@@ -94,8 +94,21 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Web Developer", "Quality Assurance Tester", "Frontend Developer"];
-const TECH_STACK = ["Quality Assurance", "Manual Testing", "Automation Testing", "Playwright","React", "PHP","Javascript", "Microsoft Office"];
+const WORDS = [
+  "Web Developer",
+  "Quality Assurance Tester",
+  "Frontend Developer",
+];
+const TECH_STACK = [
+  "Quality Assurance",
+  "Manual Testing",
+  "Automation Testing",
+  "Playwright",
+  "React",
+  "PHP",
+  "Javascript",
+  "Microsoft Office",
+];
 const SOCIAL_LINKS = [
   {
     icon: Github,
@@ -170,7 +183,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Muhammad Amrullah — Frontend Web Developer</title>
+        <title>Muhammad Amrullah — Quality Assurance| Web Developer |</title>
         <meta
           name="description"
           content="Website resmi Muhammad Amrullah, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan."
@@ -212,7 +225,6 @@ const Home = () => {
         >
           <div className="container mx-auto min-h-screen">
             <div className="flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg:gap-20">
-              
               {/* Left Column */}
               <div
                 className="w-full lg:w-1/2 space-y-6 sm:space-y-8 text-left lg:text-left order-1 lg:order-1 lg:mt-0"
@@ -241,7 +253,10 @@ const Home = () => {
                     data-aos="fade-up"
                     data-aos-delay="1000"
                   >
-                    Mengembangkan aplikasi web yang modern serta memastikan setiap produk memenuhi standar kualitas melalui proses pengujian yang sistematis, kolaboratif, dan berorientasi pada pengalaman pengguna
+                    Mengembangkan aplikasi web yang modern serta memastikan
+                    setiap produk memenuhi standar kualitas melalui proses
+                    pengujian yang sistematis, kolaboratif, dan berorientasi
+                    pada pengalaman pengguna
                   </p>
 
                   {/* Tech Stack */}
@@ -256,7 +271,7 @@ const Home = () => {
                   </div>
 
                   {/* CTA Buttons & Social Links Grouped */}
-                  <div 
+                  <div
                     className="flex flex-wrap items-center gap-4 pt-2"
                     data-aos="fade-up"
                     data-aos-delay="1400"
@@ -269,7 +284,7 @@ const Home = () => {
                       />
                       <CTAButton href="#Contact" text="Contact" icon={Mail} />
                     </div>
-                    
+
                     {/* Social Links (Hidden on very small screens, shown alongside buttons on larger) */}
                     <div className="hidden sm:flex gap-3">
                       {SOCIAL_LINKS.map((social, index) => (
@@ -277,7 +292,6 @@ const Home = () => {
                       ))}
                     </div>
                   </div>
-                  
                 </div>
               </div>
 
@@ -327,7 +341,6 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
