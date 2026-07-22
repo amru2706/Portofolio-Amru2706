@@ -95,8 +95,8 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = [
-  "Web Developer",
   "Quality Assurance Tester",
+  "Web Developer",
   "Frontend Developer",
 ];
 const TECH_STACK = [
@@ -108,6 +108,7 @@ const TECH_STACK = [
   "PHP",
   "Javascript",
   "Microsoft Office",
+  "Microsoft Excel",
 ];
 const SOCIAL_LINKS = [
   {
@@ -183,13 +184,13 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Muhammad Amrullah — Quality Assurance| Web Developer |</title>
+        <title>Muhammad Amrullah — Quality Assurance | Web Developer |</title>
         <meta
           name="description"
           content="Website resmi Muhammad Amrullah, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://loremipsum.com" />
+        <link rel="canonical" href="https://amru2706.netlify.app/" />
         <meta
           property="og:title"
           content="Muhammad Amrullah — Frontend Web Developer"
@@ -198,7 +199,7 @@ const Home = () => {
           property="og:description"
           content="Website resmi dan portofolio Muhammad Amrullah, Front-End Web Developer."
         />
-        <meta property="og:url" content="https://loremipsum.com" />
+        <meta property="og:url" content="https://amru2706.netlify.app/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
           {
@@ -206,7 +207,7 @@ const Home = () => {
             "@type": "Person",
             "name": "Muhammad Amrullah",
             "jobTitle": "Frontend Developer",
-            "url": "https://loremipsum.com",
+            "url": "https://amru2706.netlify.app/",
             "sameAs": [
               "https://github.com/amru2706",
               "https://www.linkedin.com/in/muhammad-amrullah-b205922a6/",
