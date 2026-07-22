@@ -253,7 +253,12 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Saya merupakan seorang Fresh Graduate lulusan S1 Teknologi Informasi yang memiliki pengalaman professional di bidang Quality Assurance dan Web Development. Berpengalaman dalam pengujian aplikasi, pengembangan sistem berbasis web, serta memastikan kualitas perangkat lunak melalui pendekatan yang sistematis, detail, dan berorientasi pada pengalaman pengguna.
+              Saya merupakan seorang Fresh Graduate lulusan S1 Teknologi
+              Informasi yang memiliki pengalaman professional di bidang Quality
+              Assurance dan Web Development. Berpengalaman dalam pengujian
+              aplikasi, pengembangan sistem berbasis web, serta memastikan
+              kualitas perangkat lunak melalui pendekatan yang sistematis,
+              detail, dan berorientasi pada pengalaman pengguna.
             </p>
 
             <div
@@ -282,7 +287,7 @@ const AboutPage = () => {
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="https://drive.google.com/file/d/1xiFxUBSjnzZGmOEY9omiTtWGHObRb578/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YYOZ3nlN1OrL80LETiogPt0BnOSNGB-e/view?usp=sharing"
                 className="w-full lg:w-auto"
               >
                 <button
