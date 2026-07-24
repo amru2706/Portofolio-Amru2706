@@ -255,7 +255,7 @@ const AboutPage = () => {
             >
               Saya merupakan seorang Fresh Graduate lulusan S1 Teknologi
               Informasi yang memiliki pengalaman professional di bidang Quality
-              Assurance dan Web Development. Berpengalaman dalam pengujian
+              Assurance dan Web Developmentt. Berpengalaman dalam pengujian
               aplikasi, pengembangan sistem berbasis web, serta memastikan
               kualitas perangkat lunak melalui pendekatan yang sistematis,
               detail, dan berorientasi pada pengalaman pengguna.
