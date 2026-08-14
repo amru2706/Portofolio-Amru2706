@@ -70,12 +70,10 @@ const TimelineItem = memo(
 
       {/* Card */}
       <div className="flex-1 group relative">
-
         {/* Animated Border */}
-       
 
         <div
-className="
+          className="
 relative
 overflow-hidden
 rounded-3xl
@@ -90,7 +88,7 @@ hover:-translate-y-2
 hover:border-indigo-500/40
 hover:shadow-xl
 "
->
+        >
           {/* Shine */}
           <span
             className="
@@ -138,9 +136,7 @@ hover:shadow-xl
             {location}
           </div>
 
-          <p className="text-gray-300 leading-8 mt-5">
-            {description}
-          </p>
+          <p className="text-gray-300 leading-8 mt-5">{description}</p>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-6">
@@ -171,7 +167,7 @@ hover:shadow-xl
         </div>
       </div>
     </div>
-  )
+  ),
 );
 
 const SectionHeader = memo(({ title, subtitle, icon: Icon }) => (
@@ -194,7 +190,7 @@ const SectionHeader = memo(({ title, subtitle, icon: Icon }) => (
 const CAREER_DATA = [
   {
     year: "March 2026 - Present",
-    title: "Quality Assurance Tester",
+    title: "Software Quality Assurance",
     institution: "PT. Infovesta Utama",
     location: "Jakarta • Work From Office",
     status: "Current",
@@ -239,7 +235,6 @@ const CAREER_DATA = [
 ];
 
 const Pengalaman = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 900,
@@ -260,7 +255,6 @@ const Pengalaman = () => {
         text-white
       "
     >
-
       {/* Background */}
       <BackgroundDecoration />
 
@@ -319,13 +313,10 @@ const Pengalaman = () => {
       />
 
       {/* Intro */}
-      <div
-        className="max-w-3xl mx-auto text-center mb-20"
-        data-aos="fade-up"
-      >
+      <div className="max-w-3xl mx-auto text-center mb-20" data-aos="fade-up">
         <p className="text-gray-400 leading-8 text-lg">
-          Perjalanan profesional saya dimulai dari dunia pengembangan
-          aplikasi web hingga saat ini berfokus pada bidang
+          Perjalanan profesional saya dimulai dari dunia pengembangan aplikasi
+          web hingga saat ini berfokus pada bidang
           <span className="text-indigo-400 font-semibold">
             {" "}
             Quality Assurance
@@ -338,7 +329,6 @@ const Pengalaman = () => {
 
       {/* Timeline */}
       <div className="relative max-w-6xl mx-auto">
-
         {/* Line Desktop */}
         <div
           className="
@@ -358,20 +348,12 @@ const Pengalaman = () => {
         ></div>
 
         {CAREER_DATA.map((item, index) => (
-          <TimelineItem
-            key={index}
-            {...item}
-            isLeft={index % 2 === 0}
-          />
+          <TimelineItem key={index} {...item} isLeft={index % 2 === 0} />
         ))}
       </div>
 
       {/* Bottom Quote */}
-      <div
-        className="mt-24 text-center"
-        data-aos="zoom-in"
-      >
-
+      <div className="mt-24 text-center" data-aos="zoom-in">
         <div
           className="
             inline-flex
@@ -390,17 +372,13 @@ const Pengalaman = () => {
             hover:border-indigo-400
           "
         >
-
           <Sparkles className="text-indigo-400 w-5 h-5" />
 
           <span className="text-gray-300 text-sm md:text-base">
             Always Learning • Always Improving • Delivering Quality Software
           </span>
-
         </div>
-
       </div>
-
     </section>
   );
 };
