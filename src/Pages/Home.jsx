@@ -96,6 +96,8 @@ const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = [
   "Software Quality Assurance ",
+  "Manual Testing",
+  "Automation Testing",
   "Web Developer",
   "Frontend Developer",
 ];
