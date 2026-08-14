@@ -44,14 +44,14 @@ const socialLinks = [
     displayName: "Github",
     subText: "@AmRu",
     icon: Github,
-    url: "https://github.com/amru2706_",
+    url: "https://github.com/amru2706",
     color: "#ffffff",
     gradient: "from-[#333] to-[#24292e]",
   },
   {
     name: "TikTok",
     displayName: "Tiktok",
-    subText: "@amr.uu",
+    subText: "@aamr.u",
     icon: ({ className, ...props }) => (
       <svg
         width="24px"
@@ -89,7 +89,7 @@ const socialLinks = [
         </g>
       </svg>
     ),
-    url: "https://tiktok.com/@amr.uu",
+    url: "https://tiktok.com/@aamr.u",
     color: "black",
     gradient: "from-[#000000] via-[#25F4EE] to-[#FE2C55]",
   },
